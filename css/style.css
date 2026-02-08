@@ -1,0 +1,122 @@
+/*
+Selectores:
+* -> Selector universal
+Selecion por id -> elemento de mayor especificidad por: #id
+Selecion por etiqueta html -> h1 section
+Selecion por propiedad class
+
+Paleta de colores:
+#FFD700
+#005BBB
+#EF3340
+#3BA935
+#6A3E2E
+#B28FCE
+#000000
+#FFFFFF
+*/
+
+/* :root {
+    --color-principal: rgb(hsl(0, 0%, 0%));
+
+}
+
+body {
+    background-color: var(--color-principal);
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Hind Mysuru", sans-serif;
+    font-weight: 300px;
+    font-style: normal;
+    background-color: #FFFFFF;
+}
+
+.marquesina{
+    width: 100%;
+    background-color: #6A3E2E;
+    color: #FFFFFF;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mensajes {
+        display: flex;
+        animation: desplazar 40s linear infinite;
+    }
+    .mensaje {
+        flex: none;
+        padding: 0 24%;
+        white-space: nowrap;
+        color:#FFFFFF;
+        font-size: 1.0em;
+        font-weight: 600;
+    }
+}
+
+@keyframes desplazar {
+        0% {
+            transform: translateX(100%);
+        }
+        10% {
+            transform: translateX(60%);
+        }
+        20% {
+            transform: translateX(20%);
+        }
+        30% {
+            transform: translateX(-20%);
+        }
+        40% {
+            transform: translateX(-60%);
+        }
+        50% {
+            transform: translateX(-100%);
+        }
+        60% {
+            transform: translateX(-60%);
+        }
+        70% {
+            transform: translateX(-140%);
+        }
+        80% {
+            transform: translateX(-180%);
+        }
+        90% {
+            transform: translateX(-220%);
+        }
+        100% {
+            transform: translateX(-280%);
+        }
+}
+
+.pre-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #005BBB;
+    padding: 0.7%;
+    .telphones > b{
+        font-size: 1.0rem;
+        color: #FFFFFF;
+    }
+    .social_net_black {
+        display: flex;
+        list-style: none;
+        margin-right: 20px;
+        li {
+            margin: 0 20px;
+        }
+    }
+}
+
+.nets_black {
+    width: 24px;
+}
